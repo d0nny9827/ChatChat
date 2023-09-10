@@ -98,9 +98,9 @@ export default function MessageInput() {
         <label htmlFor="file">
           <PhotoIcon className="icon" />
         </label>
-        <PaperClipIcon className="icon" />
-        <MicrophoneIcon className="icon" />
-        <FaceSmileIcon className="icon" />
+        <PaperClipIcon className="icon hidden sm:inline" />
+        <MicrophoneIcon className="icon hidden sm:inline" />
+        <FaceSmileIcon className="icon hidden sm:inline" />
         <button
           onClick={handleSendMessage}
           className="bg-brand-shiori px-6 py-1.5 rounded-md text-sm font-semibold

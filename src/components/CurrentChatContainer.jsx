@@ -30,7 +30,7 @@ export default function CurrentChatContainer() {
   
   return (
     <div
-      className="bg-brand-ice/5 h-[calc(100%-116px)] p-3 overflow-y-auto scrollbar-hide !scrollbar-thin !scrollbar-track-transparent
+      className="bg-brand-ice/5 h-[calc(100%-116px)] p-2  sm:p-3 overflow-y-auto scrollbar-hide !scrollbar-thin !scrollbar-track-transparent
     !scrollbar-thumb-brand-ramu !scrollbar-thumb-rounded-full"
     >
       {messages.map((message) => (

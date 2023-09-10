@@ -21,7 +21,6 @@ export default function Search() {
 
   const { currentUser } = useContext(AuthContext);
   const { data, dispatch } = useContext(ChatContext)
-  console.log(data)
 
   const handleNameChange = (event) => {
     setUsername(event.target.value);

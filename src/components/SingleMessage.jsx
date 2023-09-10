@@ -21,18 +21,18 @@ export default function SingleMessage({ message }) {
   return (
     <div
     ref={ref}
-      className={`mb-4 flex gap-x-4 relative ${
+      className={`mb-4 flex gap-x-2 relative ${
         message.senderId === currentUser.uid && "flex-row-reverse"
       }`}
     >
-      <div className="flex flex-col">
+      <div className="">
         <img
           src={
             message.senderId === currentUser.uid
               ? currentUser.photoURL
               : data.user.photoURL
           }
-          className="w-12 h-12 rounded-full object-cover"
+          className="w-12 h-12 rounded-full object-cover hidden sm:inline"
         />
       </div>
       <div

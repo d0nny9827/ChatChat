@@ -115,7 +115,7 @@ export default function Register() {
               )}
             </button>
           </form>
-          <div className="flex justify-between w-full mt-8">
+          <div className="flex flex-col sm:flex-row items-center gap-y-4 sm:gap-0 justify-between w-full mt-8 text-sm sm:text-base">
             <button className="hover:underline hover:text-brand-yua">
               Create using Google instead?
             </button>

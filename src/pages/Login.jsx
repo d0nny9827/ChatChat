@@ -57,7 +57,7 @@ export default function Login() {
           </form>
           <p className="my-4 font-semibold">or</p>
           <button className="bg-brand-luna button">Sign in with Google</button>
-          <div className="flex justify-end w-full mt-8">
+          <div className="flex justify-start sm:justify-end w-full mt-8">
             <div>
               <span className="text-brand-ice/40">Don't have an account? </span>
               <Link to={'/register'}>

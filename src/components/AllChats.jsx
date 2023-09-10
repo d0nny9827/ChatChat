@@ -33,22 +33,26 @@ export default function AllChats() {
 
   return (
     <div>
-      {Object.entries(chats)?.sort((a, b) => b[1].date - a[1].date).map((user) => (
-        <div
-          key={user[0]}
-          className="flex items-center p-3 gap-x-3 hover:bg-brand-ice/40 hover:shadow-xl transition-all duration-500 ease-out cursor-pointer"
-          onClick={() => handleUserSelect(user[1].userInfo)}
-        >
-          <img
-            src={user[1]?.userInfo?.photoURL}
-            className="h-12 w-12 rounded-full object-cover"
-          />
-          <div>
-            <span className="font-bold">{user[1]?.userInfo?.displayName}</span>
-            <p className="text-sm">{user[1]?.lastMessage?.text}</p>
+      {Object.entries(chats)
+        ?.sort((a, b) => b[1].date - a[1].date)
+        .map((user) => (
+          <div
+            key={user[0]}
+            className="flex items-center sm:justify-start justify-center py-3 sm:p-3 gap-x-3 hover:bg-brand-ice/40 hover:shadow-xl transition-all duration-500 ease-out cursor-pointer"
+            onClick={() => handleUserSelect(user[1].userInfo)}
+          >
+            <img
+              src={user[1]?.userInfo?.photoURL}
+              className="h-12 w-12 rounded-full object-cover"
+            />
+            <div className="hidden sm:inline">
+              <span className="font-bold">
+                {user[1]?.userInfo?.displayName}
+              </span>
+              <p className="text-sm">{user[1]?.lastMessage?.text}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
