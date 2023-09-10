@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parentContainer {
+  @apply bg-brand-charcoal h-screen flex items-center justify-center text-brand-ice;
+}
+
+.input {
+  @apply w-full mt-6 p-3 bg-transparent border-2 border-brand-ice/20 rounded-md 
+  placeholder:text-brand-ice/30 outline-none hover:bg-brand-ice/20 hover:bg-opacity-50
+  font-semibold placeholder:font-normal;
+}
+
+.button {
+  @apply w-full py-3 rounded-md font-semibold
+  hover:bg-opacity-70 transition-all duration-200;
+}
+
+.icon {
+  @apply cursor-pointer h-6 w-6 hover:opacity-50 transition-all duration-300 ease-out;
+}
